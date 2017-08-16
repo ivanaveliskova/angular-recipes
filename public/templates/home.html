@@ -1,0 +1,10 @@
+<div class="container">
+    <a href="#!/about" class="center">About</a>
+
+    <div ng-repeat="recipe in recipes">
+        <a href="#!/recipes/{{$index}}">
+            <h2 class="recipe__name">{{ recipe.name }}</h2>
+        </a>
+    </div>
+
+</div>
