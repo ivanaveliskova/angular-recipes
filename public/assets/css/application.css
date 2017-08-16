@@ -1,0 +1,18 @@
+* {
+  font-family: sans-serif; }
+
+body {
+  /*text-align: center;*/ }
+
+h1 {
+  color: hotpink; }
+
+.center {
+  display: block;
+  text-align: center; }
+
+/* Add reset */
+/* Add base styles */
+/* Convert to scss */
+/* Can I use build tools like gulp to set this up? */
+/* Have any scss save to public/assets/css/styles.css (for now) */
