@@ -11,11 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
     "express": "^4.15.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0"
   }

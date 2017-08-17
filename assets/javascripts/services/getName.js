@@ -7,4 +7,4 @@ app.factory('getName', ['$http', function($http) {
         }, function(err) {
             return err;
         });
-}])
+}]);

@@ -17,11 +17,11 @@ app.config(function($routeProvider) {
     .otherwise({
         redirectTo: '/'
     })
-})
+});
 
 app.filter('spaceCase', function() {
     return function(input) {
         input = input || '';
         return input.replace(/_/g, ' ');
     }
-})
+});
