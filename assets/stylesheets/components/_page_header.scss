@@ -1,0 +1,25 @@
+.page-header {
+    padding: 0 (2 * $spacing);
+    text-align: center;
+    background: $alt-bg-color;
+
+    @include min-width($medium) {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.page-header__nav {
+    display: flex;
+    justify-content: space-around;
+
+    @include min-width($medium) {
+        display: block;
+    }
+}
+
+.page-header__nav-link {
+    padding: 0 (2 * $spacing);
+}

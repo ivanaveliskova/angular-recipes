@@ -1,18 +1,118 @@
-* {
-  font-family: sans-serif; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 100%;
+  font-family: sans-serif;
+  border: 0;
+  vertical-align: baseline; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 body {
-  text-align: center; }
+  font-size: 16px;
+  line-height: 1.5; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
 
 h1 {
-  color: hotpink; }
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1.12em; }
+
+h5 {
+  font-size: 0.83em; }
+
+h6 {
+  font-size: 0.75em; }
+
+p, h1, h2, h3, h4, h5, h6,
+ul, li {
+  margin: 8px 0; }
+
+p {
+  font-weight: 400; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle; }
 
 .center {
   display: block;
   text-align: center; }
 
-/* Add reset */
-/* Add base styles */
-/* Convert to scss */
-/* Can I use build tools like gulp to set this up? */
-/* Have any scss save to public/assets/css/styles.css (for now) */
+.center-inline {
+  margin: 0 auto; }
+
+.heading {
+  font-weight: 700; }
+
+.link {
+  color: #c83796; }
+  .link:hover {
+    color: #78215a; }
+
+.container {
+  padding: 8px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.page-header {
+  padding: 0 16px;
+  text-align: center;
+  background: aliceblue; }
+  @media screen and (min-width: 760px) {
+    .page-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media screen and (min-width: 760px) {
+    .page-header__nav {
+      display: block; } }
+
+.page-header__nav-link {
+  padding: 0 16px; }

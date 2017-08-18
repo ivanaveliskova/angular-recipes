@@ -4,14 +4,20 @@
         <title>Recipes App</title>
         <link rel="stylesheet" type="text/css" href="/assets/css/application.css"/>
         <script type="text/javascript" src="/assets/javascripts/shared/angular.min.js"></script>
-        <script src="/assets/javascripts/shared/angular-route.min.js"></script>
+        <script src="/assets/javascripts/shared/angular-route.min.js"></script> <!-- Maybe can make a top javascript file to combine all of the dependencies into one file? -->
     </head>
     <body>
-        <h1 class="center">Stuff</h1>
-        <p class="center">Nav here</p>
+        <header class="page-header">
+            <h1 class="heading heading--1">My Favorite Recipes</h1>
+            <nav class="page-header__nav">
+                <a href="#!/" class="link page-header__nav-link">Home</a>
+                <a href="#!/about" class="link page-header__nav-link">About</a>
+            </nav>
+        </header>
 
-        <div ng-view></div>
-
+        <div class="container">
+            <div ng-view></div>
+        </div>
 
         <script type="text/javascript" src="/assets/javascripts/application.js"></script>
 

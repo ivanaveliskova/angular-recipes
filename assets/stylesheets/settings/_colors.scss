@@ -1,0 +1,28 @@
+// colors
+$white:                 #ffffff;
+$black:                 #000000;
+$gray:                  #c0c0c0;
+$light-gray:            lighten($gray, 15%);
+$red:                   #cc0000;
+$green:                 #009900;
+$blue:                  #0000ff;
+$orange:                #e65c00;
+$pink:                  #c83796;
+$dark-pink:             darken($pink, 20%);
+$yellow:                #ffff66;
+$purple:                #6600cc;
+$aliceblue:             aliceblue;
+$gray-alpha-80:         rgba($gray, .8);
+
+// standard color names
+$color:                 $black;
+$opposite-color:        invert($color);
+$highlight-color:       $pink;
+$link-color:            $pink;
+$link-hover-color:      $dark-pink;
+$background-color:      $white;
+$alt-bg-color:          $aliceblue;
+$border-color:          $gray;
+$alt-border-color:      $light-gray;
+$image-text-bg-color:   $gray-alpha-80;
+

@@ -4,8 +4,8 @@ var gulp            = require('gulp'),
     sass            = require('gulp-sass'),
     autoprefixer    = require('autoprefixer'),
     postcss         = require('gulp-postcss'),
-    deporder        = require('gulp-deporder'),
-    concat          = require('gulp-concat');
+    concat          = require('gulp-concat'),
+    nodemon         = require('gulp-nodemon');
 
 gulp.task('angular', function() {
     return gulp.src('./node_modules/angular/angular.min.js')
@@ -18,7 +18,7 @@ gulp.task('angular:route', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('./assets/stylesheets/**.scss')
+    return gulp.src('./assets/stylesheets/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer({ browsers: ['last 2 versions', '>2%']})]))
         .pipe(gulp.dest('./public/assets/css'));
@@ -38,4 +38,10 @@ gulp.task('js:watch', function() {
     gulp.watch('./assets/javascripts/**/*.js', ['js']);
 });
 
-gulp.task('run:all', ['sass:watch', 'js:watch']);
+gulp.task('restart', function() {
+    nodemon({
+        script: 'app.js'
+    });
+});
+
+gulp.task('run:all', ['sass:watch', 'js:watch', 'restart']);
