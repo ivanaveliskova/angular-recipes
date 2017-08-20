@@ -116,3 +116,14 @@ img {
 
 .page-header__nav-link {
   padding: 0 16px; }
+
+.recipe {
+  display: block;
+  padding: 8px; }
+
+.recipe__name {
+  color: #6600cc;
+  text-transform: capitalize; }
+
+.recipe_description {
+  color: #000000; }

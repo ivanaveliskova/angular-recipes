@@ -1,0 +1,16 @@
+$recipe-header-color:       $purple;
+$recipe-description-color:  $color;
+
+.recipe {
+    display: block;
+    padding: $spacing;
+}
+
+.recipe__name {
+    color: $recipe-header-color;
+    text-transform: capitalize;
+}
+
+.recipe_description {
+    color: $recipe-description-color;
+}

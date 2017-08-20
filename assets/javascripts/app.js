@@ -7,7 +7,6 @@ app.config(function($routeProvider) {
         templateUrl: 'templates/home.html'
     })
     .when('/about', {
-        controller: 'AboutController',
         templateUrl: 'templates/about.html'
     })
     .when('/recipes/:id', {
