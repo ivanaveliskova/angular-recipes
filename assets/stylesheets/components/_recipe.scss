@@ -15,3 +15,9 @@ $recipe-description-color:  $color;
 .recipe__description {
     color: $recipe-description-color;
 }
+
+.active {
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+}

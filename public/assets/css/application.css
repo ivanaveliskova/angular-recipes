@@ -136,3 +136,8 @@ img {
 
 .recipe__description {
   color: #000000; }
+
+.active {
+  color: red;
+  font-weight: 700;
+  font-size: 30px; }

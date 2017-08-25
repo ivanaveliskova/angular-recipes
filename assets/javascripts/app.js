@@ -1,4 +1,4 @@
-var app = angular.module('RecipeApp', ['ngRoute']);
+var app = angular.module('RecipeApp', ['ngRoute', 'angular.filter']);
 
 app.config(function($routeProvider) {
 
@@ -23,16 +23,4 @@ app.filter('spaceCase', function() {
         input = input || '';
         return input.replace(/_/g, ' ');
     }
-});
-
-app.controller('TabController', function() {
-    this.tab = 1;
-
-    this.setTab = function(index) {
-        this.tab = index;
-    };
-
-    this.getTab = function(index) {
-        return this.tab === index;
-    };
 });

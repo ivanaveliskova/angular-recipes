@@ -91,6 +91,23 @@ exports.name = function (req, res) {
                 'Add rice and mix and remove from heat',
                 'Add soy sauce and mix well and serve'
             ]
+        },
+        {
+            name: 'french fries',
+            ingredients: {
+                potatoes: {
+                    amount: 2
+                },
+                oil: {
+                    amount: 0.5,
+                    unit: 'cup'
+                }
+            },
+            directions: [
+                'Cut potatoes',
+                'Fry',
+                'Eat'
+            ]
         }
     ]
   });
