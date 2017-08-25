@@ -1,4 +1,16 @@
+$grid-border-color: $link-color;
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__cell {
+    border: 2px solid $grid-border-color;
+    border-radius: 8px;
+    transition: 0.3s all ease;
+
+    &:hover {
+        border-color: invert($grid-border-color);
+    }
 }

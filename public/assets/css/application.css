@@ -78,7 +78,7 @@ img {
 .link {
   color: #c83796; }
   .link:hover {
-    color: #78215a; }
+    color: #37c869; }
 
 .container {
   padding: 8px; }
@@ -86,6 +86,14 @@ img {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+
+.grid__cell {
+  border: 2px solid #c83796;
+  border-radius: 8px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+  .grid__cell:hover {
+    border-color: #37c869; }
 
 .page-header {
   padding: 0 16px;
@@ -119,11 +127,12 @@ img {
 
 .recipe {
   display: block;
-  padding: 8px; }
+  margin: 8px;
+  padding: 8px 16px; }
 
 .recipe__name {
-  color: #6600cc;
+  color: #c83796;
   text-transform: capitalize; }
 
-.recipe_description {
+.recipe__description {
   color: #000000; }

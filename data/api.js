@@ -59,6 +59,38 @@ exports.name = function (req, res) {
                     unit: 'slices'
                 }
             }
+        },
+        {
+            name: 'fried rice',
+            ingredients: {
+                rice: {
+                    amount: 1,
+                    unit: 'cup, dry'
+                },
+                carrots_and_peas: {
+                    amount: 1,
+                    unit: 'bag, frozen'
+                },
+                egg: {
+                    amount: 1
+                },
+                sunflower_oil: {
+                    amount: 1,
+                    unit: 'tsp'
+                },
+                soy_sauce: {
+                    amount: 0.25,
+                    unit: 'cup'
+                }
+            },
+            directions: [
+                'Cook rice',
+                'Fry carrots and peas until slightly soft',
+                'Push aside and fry egg in same pan then mix together',
+                'Add protein if using',
+                'Add rice and mix and remove from heat',
+                'Add soy sauce and mix well and serve'
+            ]
         }
     ]
   });

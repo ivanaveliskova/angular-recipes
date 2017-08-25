@@ -19,7 +19,7 @@ $color:                 $black;
 $opposite-color:        invert($color);
 $highlight-color:       $pink;
 $link-color:            $pink;
-$link-hover-color:      $dark-pink;
+$link-hover-color:      invert($link-color);
 $background-color:      $white;
 $alt-bg-color:          $aliceblue;
 $border-color:          $gray;

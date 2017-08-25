@@ -7,7 +7,6 @@ app.config(function($routeProvider) {
         templateUrl: 'templates/home.html'
     })
     .when('/about', {
-        controller: 'AboutController',
         templateUrl: 'templates/about.html'
     })
     .when('/recipes/:id', {
@@ -26,15 +25,33 @@ app.filter('spaceCase', function() {
     }
 });
 
+app.controller('TabController', function() {
+    this.tab = 1;
+
+    this.setTab = function(index) {
+        this.tab = index;
+    };
+
+    this.getTab = function(index) {
+        return this.tab === index;
+    };
+});
+
 app.controller('AboutController', ['$scope', function($scope) {
 
 }]);
 
-app.controller('HomeController', ['$scope', 'getName', function($scope, getName) {
+app.controller('HomeController', ['$scope', '$filter', 'getName', function($scope, $filter, getName) {
+
+    $scope.getFirstLetter = function(word) {
+        return word.charAt(0);
+    }
 
     getName.then(function(data) {
         $scope.recipes = data.recipes;
+        $scope.recipes = $filter('orderBy')($scope.recipes, 'name');
     });
+
 }]);
 
 app.controller('RecipesController', ['$scope', 'getName', '$routeParams', function($scope, getName, $routeParams) {

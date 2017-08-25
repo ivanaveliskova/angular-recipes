@@ -1,16 +1,17 @@
-$recipe-header-color:       $purple;
+$recipe-color:              $link-color;
 $recipe-description-color:  $color;
 
 .recipe {
     display: block;
-    padding: $spacing;
+    margin: $spacing;
+    padding: $spacing (2 * $spacing);
 }
 
 .recipe__name {
-    color: $recipe-header-color;
+    color: $recipe-color;
     text-transform: capitalize;
 }
 
-.recipe_description {
+.recipe__description {
     color: $recipe-description-color;
 }

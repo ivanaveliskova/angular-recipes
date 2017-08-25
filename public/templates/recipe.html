@@ -1,8 +1,8 @@
-<div>
-    <h2>{{ recipe.name }}</h2>
+<div class="recipe">
+    <h2 class="recipe__name">{{ recipe.name }}</h2>
     <p ng-repeat="(ingredient, value) in recipe.ingredients">{{ value.amount }} {{ value.unit }} {{ ingredient | spaceCase }}</p>
     <ol ng-if="showDirections()">
         <li ng-repeat="direction in recipe.directions">{{ direction }}</li>
     </ol>
-    <a href="#!/">Back</a>
+    <a href="#!/" class="link">Back</a>
 </div>

@@ -1,4 +1,9 @@
-<div class="container grid">
+<div class="container" ng-controller="TabController as tabCtrl">
+    <ul>
+        <li ng-repeat="recipe in recipes" ng-class="{'active': tabCtrl.getTab( {{$index + 1}} )}"><a href ng-click="tabCtrl.setTab($index + 1)">{{ getFirstLetter(recipe.name) }}</a></li>
+    </ul>
+
+    <h1>{{ tabCtrl.tab }}</h1>
 
     <div ng-repeat="recipe in recipes">
         <a href="#!/recipes/{{$index}}" class="recipe">
