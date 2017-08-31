@@ -1,0 +1,17 @@
+.full-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.full-height--vh {
+    height: 100vh;
+}
+
+.full-height__top {
+    flex-shrink: 0;
+}
+
+.full-height__remaining {
+    flex-grow: 1;
+}

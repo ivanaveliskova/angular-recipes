@@ -1,0 +1,38 @@
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs__tab {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0;
+    margin-right: $spacing;
+    border: 2px solid $border-color;
+    border-bottom: 0;
+    border-radius: $spacing $spacing 0 0;
+}
+
+.tabs__tab--active {
+    border-color: invert($border-color);
+
+    &::after {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid $white;
+        content: '';
+    }
+}
+
+.tabs__tab-link {
+    padding: 0 16px;
+    font-size: 20px;
+
+    .tabs__tab--active & {
+        color: $link-hover-color;
+    }
+}
