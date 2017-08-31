@@ -1,9 +1,13 @@
 $recipe-color:              $link-color;
 $recipe-description-color:  $color;
 
+.recipes-container {
+    border: 2px solid invert($border-color);
+    overflow: auto;
+}
+
 .recipe {
     display: block;
-    margin: $spacing;
     padding: $spacing (2 * $spacing);
 }
 
@@ -14,10 +18,4 @@ $recipe-description-color:  $color;
 
 .recipe__description {
     color: $recipe-description-color;
-}
-
-.active {
-    color: red;
-    font-weight: 700;
-    font-size: 30px;
 }

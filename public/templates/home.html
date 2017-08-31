@@ -1,8 +1,8 @@
-<div class="container">
-    <ul>
-        <li ng-repeat="value in firstLetters | unique: 'letter'" ng-class="{'active': getTab( '{{value.letter}}' )}"><a href ng-click="setTab(value.letter)" >{{ value.letter }}</a></li>
-    </ul>
+<ul class="tabs full-height__top">
+    <li ng-repeat="value in firstLetters | unique: 'letter'" ng-class="{'tabs__tab--active': getTab( '{{value.letter}}' )}" class="tabs__tab"><a href ng-click="setTab(value.letter)" class="tabs__tab-link link">{{ value.letter }}</a></li>
+</ul>
 
+<div class="recipes-container full-height__remaining">
     <div ng-repeat="recipe in recipes" ng-show="getTab('{{getFirstLetter(recipe.name)}}')">
         <a href="#!/recipes/{{$index}}" class="recipe">
             <h2 class="recipe__name">{{ recipe.name }}</h2>
@@ -14,5 +14,5 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </a>
     </div>
-
 </div>
+

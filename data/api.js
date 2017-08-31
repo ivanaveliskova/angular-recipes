@@ -2,7 +2,6 @@
  * Serve JSON to our AngularJS client
  */
 
- // Need to restart server if making changes here
 
 exports.name = function (req, res) {
   res.json({

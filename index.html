@@ -8,8 +8,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
          <!-- Maybe can make a top javascript file to combine all of the dependencies into one file? -->
     </head>
-    <body>
-        <header class="page-header">
+    <body class="full-height full-height--vh">
+        <header class="page-header full-height__top">
             <h1 class="heading heading--1">My Favorite Recipes</h1>
             <nav class="page-header__nav">
                 <a href="#!/" class="link page-header__nav-link">Home</a>
@@ -17,9 +17,7 @@
             </nav>
         </header>
 
-        <div class="container">
-            <div ng-view></div>
-        </div>
+        <div ng-view class="container full-height__remaining full-height"></div>
 
         <script type="text/javascript" src="/assets/javascripts/application.js"></script>
 
