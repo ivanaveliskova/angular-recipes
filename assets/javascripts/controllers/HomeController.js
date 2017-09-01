@@ -1,4 +1,4 @@
-app.controller('HomeController', ['$scope', '$filter', 'getName', function($scope, $filter, getName) {
+app.controller('HomeController', ['$scope', '$filter', 'getName', '$window', function($scope, $filter, getName, $window) {
 
     $scope.getFirstLetter = function(word) {
         return word.charAt(0);
@@ -14,11 +14,14 @@ app.controller('HomeController', ['$scope', '$filter', 'getName', function($scop
             $scope.firstLetters[key] = { letter: $scope.getFirstLetter(value.name)};
         });
 
-        $scope.tab = $scope.firstLetters[0].letter;
+        $scope.tab = $window.localStorage.getItem('defaultTab');
+
+        if ($scope.tab == null) { $scope.tab = $scope.firstLetters[0].letter; }
 
     });
         $scope.setTab = function(letter) {
             $scope.tab = letter;
+            $window.localStorage.setItem('defaultTab', letter);
         };
 
         $scope.getTab = function(letter) {
