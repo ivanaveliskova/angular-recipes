@@ -3,7 +3,7 @@
 </ul>
 
 <div class="recipes-container full-height__remaining">
-    <div ng-repeat="recipe in recipes" ng-show="getTab('{{getFirstLetter(recipe.name)}}')">
+    <div ng-repeat="recipe in recipes" ng-show="getTab('{{getFirstLetter(recipe.name)}}')" class='recipes'>
         <a href="#!/recipes/{{$index}}" class="recipe">
             <h2 class="recipe__name">{{ recipe.name }}</h2>
             <p class="recipe__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

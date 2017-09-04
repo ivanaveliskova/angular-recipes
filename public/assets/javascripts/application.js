@@ -7,6 +7,7 @@ app.config(function($routeProvider) {
         templateUrl: 'templates/home.html'
     })
     .when('/about', {
+        controller: 'AboutController',
         templateUrl: 'templates/about.html'
     })
     .when('/recipes/:id', {
@@ -25,8 +26,8 @@ app.filter('spaceCase', function() {
     }
 });
 
-app.controller('AboutController', ['$scope', function($scope) {
-
+app.controller('AboutController', ['$scope', '$window', function($scope, $window) {
+    $window.localStorage.removeItem('defaultTab');
 }]);
 
 app.controller('HomeController', ['$scope', '$filter', 'getName', '$window', function($scope, $filter, getName, $window) {
