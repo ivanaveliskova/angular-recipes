@@ -5,7 +5,7 @@
 <div class="recipes-container full-height__remaining">
     <div ng-repeat="recipe in recipes" ng-show="getTab('{{getFirstLetter(recipe.name)}}')" class='recipes'>
         <a href="#!/recipes/{{$index}}" class="recipe">
-            <img ng-src="{{ recipe.img }}" class="" />
+            <img ng-src="{{ recipe.img }}" class="recipe__image" />
             <h2 class="recipe__name">{{ recipe.name }}</h2>
             <p class="recipe__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
