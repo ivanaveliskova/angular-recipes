@@ -155,6 +155,10 @@ img {
   display: block;
   padding: 8px 16px; }
 
+.recipe__image {
+  float: right;
+  max-width: 250px; }
+
 .recipe__name {
   color: #c83796;
   text-transform: capitalize; }
