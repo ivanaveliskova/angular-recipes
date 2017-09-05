@@ -16,6 +16,7 @@ $recipe-description-color:  $color;
 }
 
 .recipe__image {
+    margin-top: $spacing;
     float: right;
     max-width: 250px;
 }

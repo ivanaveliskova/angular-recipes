@@ -156,6 +156,7 @@ img {
   padding: 8px 16px; }
 
 .recipe__image {
+  margin-top: 8px;
   float: right;
   max-width: 250px; }
 
