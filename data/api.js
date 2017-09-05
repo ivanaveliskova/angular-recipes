@@ -93,6 +93,7 @@ exports.name = function (req, res) {
         },
         {
             name: 'french fries',
+            img: 'https://cdn.potatopro.com/cdn/farfuture/JHyuloN9w_v4NBD7TkfmaZfWN6i49VrlsfspygR2J5Y/mtime:1495749506/sites/default/files/pictures/french-fries-1200.jpg',
             ingredients: {
                 potatoes: {
                     amount: 2
